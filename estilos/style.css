@@ -36,6 +36,9 @@ header {
   display: flex;
   justify-content: flex-end;
   align-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 nav#menu ul {
@@ -104,6 +107,7 @@ div#social {
 div#social a {
   color: var(--destaque);
   transition: color 0.5s;
+  font-size: 1.5em;
 }
 
 div#social a:hover {
