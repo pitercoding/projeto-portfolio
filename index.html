@@ -1,65 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Final Portfolio</title>
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="shortcut icon" href="favicon.svg" type="image/svg">
-    <script src="https://kit.fontawesome.com/4a2b0435df.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Final Portfolio</title>
+  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="shortcut icon" href="favicon.svg" type="image/svg">
+  <!-- Ícones Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
-    <header>
-        <nav id="menu">
-            <ul>
-                <li><a href="#"><i class="fa-solid fa-house-chimney-window"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-brain"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-user-graduate"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-trowel-bricks"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-moon"></i></a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav id="menu">
+      <ul>
+        <li><a href="#"><i class="bi bi-house-door-fill"></i></a></li>
+        <li><a href="#"><i class="bi bi-cpu-fill"></i></a></li>
+        <li><a href="#"><i class="bi bi-mortarboard-fill"></i></a></li>
+        <li><a href="#"><i class="bi bi-bricks"></i></a></li>
+        <li><a href="#"><i class="bi bi-moon-stars-fill"></i></a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section id="ficha">
-            <img src="imagens/piter-perfil.jpeg" alt="Piter Gomes" class="foto">
-            <h1>Piter Gomes</h1>
-            <p>Sou <strong>bacharel em Ciências Biológicas</strong>  e <strong>mestre em Oceanografia</strong> , e atualmente estou em <strong>transição para o desenvolvimento de software</strong>. Como <strong>estudante de Ciência da Computação</strong> e aspirante a <strong>Desenvolvedor Full-Stack</strong>, combino minha formação científica — <strong>pensamento analítico, pesquisa e resolução de problemas</strong> — com crescente expertise técnica para criar soluções impactantes. Explore meu trabalho, minha história e maneiras de me contatar.</p>
-            <div id="social">
-                <a href="https://www.linkedin.com/in/piter-gomes-4a39281a1/" target="_blank" rel="nofollow"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/pitercoding" target="_blank" rel="nofollow"><i class="fa-brands fa-github"></i></a>
-                <a href="mailto:piterg.bio@gmail.com" target="_blank" rel="nofollow"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://www.instagram.com/piterdfg/" target="_blank" rel="nofollow"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://my-portfolio-flame-mu-xxis8wes4p.vercel.app/" target="_blank" rel="nofollow"><i class="fa-solid fa-globe"></i></a>
+  <main>
+    <section id="ficha">
+      <img src="imagens/piter-perfil.jpeg" alt="Piter Gomes" class="foto">
+      <h1>Piter Gomes</h1>
+      <p>Sou <strong>bacharel em Ciências Biológicas</strong> e <strong>mestre em Oceanografia</strong>, e atualmente estou em <strong>transição para o desenvolvimento de software</strong>. Como <strong>estudante de Ciência da Computação</strong> e aspirante a <strong>Desenvolvedor Full-Stack</strong>, combino minha formação científica — <strong>pensamento analítico, pesquisa e resolução de problemas</strong> — com crescente expertise técnica para criar soluções impactantes. Explore meu trabalho, minha história e maneiras de me contatar.</p>
+
+      <div id="social">
+        <a href="https://www.linkedin.com/in/piter-gomes-4a39281a1/" target="_blank" rel="nofollow"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/pitercoding" target="_blank" rel="nofollow"><i class="bi bi-github"></i></a>
+        <a href="mailto:piterg.bio@gmail.com" target="_blank" rel="nofollow"><i class="bi bi-envelope-fill"></i></a>
+        <a href="https://www.instagram.com/piterdfg/" target="_blank" rel="nofollow"><i class="bi bi-instagram"></i></a>
+        <a href="https://my-portfolio-flame-mu-xxis8wes4p.vercel.app/" target="_blank" rel="nofollow"><i class="bi bi-globe2"></i></a>
+      </div>
+    </section>
+
+    <section id="detalhes">
+      <article id="video">
+        <h2><i class="bi bi-handshake"></i> Deixe-me apresentar</h2>
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/hs7ByeVbqG0?si=032lsoombNtFWOvz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </article>
+
+      <article id="skills">
+        <h2><i class="bi bi-cpu-fill"></i> Minhas Skills</h2>
+
+        <div id="skill-container">
+          <div class="item">
+            <div class="info">
+              <span class="nome">HTML5</span>
+              <span class="porcent">90%</span>
             </div>
-        </section>
-        <section id="detalhes">
-            <article id="video">
-                <h2> <i class="fa-solid fa-handshake"></i> Deixe-me apresentar</h2>
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hs7ByeVbqG0?si=032lsoombNtFWOvz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </article> <!--FIM article#video-->
-            
-            <article id="skills">
-                <h2><i class="fa-solid fa-brain"></i> Minhas Skills</h2>
-            </article> <!--FIM article#skills-->
-            
-            <article id="formacao">
-                <h2><i class="fa-solid fa-user-graduate"></i> Formação</h2>
-            </article> <!--FIM article#formacao-->
-            
-            <article id="projetos">
-                <h2><i class="fa-solid fa-trowel-bricks"></i> Projetos</h2>
-            </article> <!--FIM article#projetos-->
-        </section>
-    </main>
+            <div class="barra">
+              <div class="progresso" style="width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+      </article>
 
-    <footer>
+      <article id="formacao">
+        <h2><i class="bi bi-mortarboard-fill"></i> Formação</h2>
+      </article>
 
-    </footer>
+      <article id="projetos">
+        <h2><i class="bi bi-bricks"></i> Projetos</h2>
+      </article>
+    </section>
+  </main>
 
-    <script src="scripts/script.js"></script>
+  <footer></footer>
+
+  <script src="scripts/script.js"></script>
 </body>
 </html>

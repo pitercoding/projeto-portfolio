@@ -7,12 +7,12 @@ temaEscuro(temasalvo === 'escuro');
 
 // Função para alternar entre tema claro e escuro
 function temaEscuro(tipo) {
-  if (tipo == true) {
+  if (tipo === true) {
     body.classList.add('escuro');
-    botao.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    botao.innerHTML = '<i class="bi bi-sun-fill"></i>';
   } else {
     body.classList.remove('escuro');
-    botao.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    botao.innerHTML = '<i class="bi bi-moon-stars-fill"></i>';
   }
 }
 
@@ -25,7 +25,7 @@ botao.addEventListener('click', () => {
 // Scroll suave para links de navegação
 const navLinks = document.querySelectorAll('#menu ul a.link');
 navLinks.forEach(link => {
-  link.addEventListener('click', function(e) {
+  link.addEventListener('click', function (e) {
     e.preventDefault();
     const target = document.querySelector(this.getAttribute('href'));
     if (target) {
