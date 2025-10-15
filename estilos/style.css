@@ -1,16 +1,8 @@
-/* 
-  Variáveis para cores:
-  --fundo-principal
-  --texto
-  --texto-inverso
-  --destaque
-  --destaque-inverso
-  --fundo-card
-*/
 * {
   /*margin: 0;
   padding: 0;*/
   box-sizing: border-box;
+  transition: background-color 0.5s, color 0.5s, border-color 0.5s;
 }
 
 :root {
@@ -20,6 +12,15 @@
   --destaque: #0077ff;
   --destaque-inverso: #66bbff;
   --fundo-card: #ffffff;
+}
+
+body.escuro {
+  --fundo-principal: #121212;
+  --texto: #f5f5f5;
+  --texto-inverso: #121212;
+  --destaque: #66bbff;
+  --destaque-inverso: #0077ff;
+  --fundo-card: #1e1e1e;
 }
 
 body {
@@ -76,7 +77,7 @@ section#ficha {
 }
 
 section#ficha img.foto {
-  width: 200px; 
+  width: 300px; 
   aspect-ratio: 1/1; /*imagem quadrada*/
   object-fit: cover; /*acerta iamgem*/
   overflow: hidden; /*se sobrar algo da imagem pra fora, fica escondido */
